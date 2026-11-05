@@ -17,7 +17,7 @@ class LastFinishedAction(InterfaceAction):
     def genesis(self):
         self.last_positions = {}
         
-        icon = get_icons('images/icon.png', 'Last Finished')
+        icon = get_icons('icon.png', 'Last Finished')
         self.qaction.setIcon(icon)
 
         self.timer = QTimer(self)
