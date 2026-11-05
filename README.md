@@ -1,2 +1,61 @@
-# Calibre---Last-Finished
-Update a user created custom Date column named `Last Finished` whenever a book reaches 99% reading progress.
+# Last Finished — Calibre Plugin
+
+## Author's Note
+
+This plugin was created because my beautiful wife needed a simple way to keep track of when she finished reading books.
+
+The solution does not rely on external software, manual metadata updates, or unnecessary complexity.
+
+**Note:** This plugin was developed and tested using Calibre version 9.17. Compatibility with other versions has not been tested.
+
+---
+
+## Solution
+
+Automatically update a user-created custom Date column named `Last Finished` whenever a book reaches 99% reading progress.
+
+The date is stored directly in Calibre's library metadata, making it persistent across Calibre restarts.
+
+## How It Works
+
+- The plugin automatically checks reading progress every 30 seconds.
+- When a book reaches 99% completion or higher, its `Last Finished` date is updated to the current date.
+- If you reopen or reread a completed book, its previous completion date is preserved.
+- If you finish the book again, the date is updated to reflect the most recent completion.
+- All dates are saved directly to your Calibre library and remain there between sessions.
+
+## Requirements
+
+- A custom Date column must be created in Calibre (see installation instructions below).
+- Reading progress must be tracked using Calibre's built-in ebook viewer. Reading progress from external devices or other reading applications is not supported.
+
+## Installation Guide
+
+### 1. Create the Custom Column
+
+1. In Calibre, go to **Preferences > Interface > Add your own columns**.
+2. At the bottom-left of the window, click **Add custom column**.
+3. Enter the following information:
+
+   - **Lookup name:** `last_finished`
+   - **Column heading:** Last Finished
+   - **Column type:** Date
+
+4. Click **OK**.
+5. At the bottom-right of the window, click **Apply**.
+6. Close and reopen Calibre.
+
+The new column should now appear at the end of your library table.
+
+### 2. Install the Plugin
+
+1. Download the plugin ZIP file.
+2. In Calibre, go to **Preferences > Advanced > Plugins**.
+3. At the bottom-right of the window, click **Load plugin from file**.
+4. Locate and select the ZIP file you downloaded.
+5. When the security warning appears, click **Yes** to proceed.
+6. When the success message appears, click **OK**.
+7. Click **Apply** at the bottom-right of the Plugins window.
+8. Close and reopen Calibre.
+
+**All done! Enjoy!**
