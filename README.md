@@ -66,7 +66,7 @@ Note: yes, its silly that im asking you to unzip and rezip. GitHub's download is
 
 1. In Calibre, go to **Preferences > Advanced > Plugins**
 2. At the bottom-right of the window, click **Load plugin from file**
-3. Locate and select the ZIP folder that you created in the steps above
+3. Locate and select the ZIP folder that you created in the steps above  - LastFinished.zip
 7. When the security warning appears, click **Yes** to proceed
 8. When the success message appears, click **OK**
 9. Click **Apply** at the bottom-right of the Plugins window
