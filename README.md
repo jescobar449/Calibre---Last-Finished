@@ -7,6 +7,7 @@ This plugin was created because my beautiful wife needed a simple way to keep tr
 The solution does not rely on external software, manual metadata updates, or unnecessary complexity.
 
 **Note:** This plugin was developed and tested using Calibre version 9.17. Compatibility with other versions has not been tested.
+**Note:** The plugin automatically checks reading progress every 30 seconds. If you reach the end of the book and close it immediately the plugin would not have enough time to update. 
 
 ---
 
@@ -37,7 +38,7 @@ The date is stored directly in Calibre's library metadata, making it persistent 
 2. At the bottom-left of the window, click **Add custom column**
 3. Enter the following information:
 
-   - **Lookup name:** `last_finished`
+   - **Lookup name:** last_finished
    - **Column heading:** Last Finished
    - **Column type:** Date
 
@@ -50,15 +51,15 @@ The new column should now appear at the end of your library table.
 
 ### 2. Download/ prepare the plugin ZIP file
 
-Note: yes, its silly that im asking you to unzip and rezip. GitHub's download is zipped but Calibre needs a the inside folder to be zipped for plug ins. 
+Note: yes, its silly that im asking you to unzip and rezip. GitHub's download is zipped but Calibre needs the inside folder to be zipped for plug ins. 
 1. Open the GitHub page: https://github.com/jescobar449/Calibre---Last-Finished
 2. Click on the green **"<> Code"** button 
 3. Click Download ZIP 
 4. Locate the downloaded folder - most likely named Calibre---Last-Finished-main.zip
 5. Right click the zipped folder > Extract All > Extract
 6. Go into the new unzipped folder - has the same name but it not zipped and has a regular folder icon 
-7. Go into the subfolder - you should now see all 4 files 
-8. Select all 4 files
+7. Go into the subfolder - you should now see all 5 files 
+8. Select all 5 files
 9. Right click > Compress to.. > ZIP File > name it LastFinished.zip
 
 
